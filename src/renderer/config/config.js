@@ -27,7 +27,7 @@ export default {
   routes: [
     {
       path: '/',
-      component: './index',
+      component: '../layouts/index.js',
     },
   ],
 };

@@ -9,10 +9,6 @@ if (process.env.NODE_ENV !== 'development') {
     .replace(/\\/g, '\\\\');
 }
 
-/**
- * Fix Windows notification func
- * appId defined in .electron-vue/webpack.main.config.js
- */
 // if (is.windows()) {
 //   app.setAppUserModelId(appId);
 // }
