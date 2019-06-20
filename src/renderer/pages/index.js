@@ -1,4 +1,3 @@
-
 import React, { PureComponent } from 'react';
 export default class Index extends PureComponent {
   constructor(props) {
@@ -6,10 +5,20 @@ export default class Index extends PureComponent {
     this.state = {};
   }
   render() {
-
     return (
       <div>
-        <p>Umi</p>
+        <p>
+          UmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmi
+        </p>
+        <p>
+          UmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmi
+        </p>
+        <p>
+          UmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmi
+        </p>
+        <p>
+          UmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmiUmi
+        </p>
       </div>
     );
   }

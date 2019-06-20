@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Layout, LocaleProvider } from 'antd';
+import { connect } from 'dva';
 import 'antd/dist/antd.less';
 import zhCN from 'antd/lib/locale-provider/zh_CN';
 import Header from './Header';
@@ -16,13 +17,15 @@ export default class App extends Component {
   }
 
   render() {
+    const { children, publicData, location } = this.props;
+
     return (
       <LocaleProvider locale={zhCN}>
         <Layout className="container">
           <Nav />
           <Layout className="bodyContainer">
             <Header />
-            {/* <RouteContent /> */}
+            {children}
           </Layout>
         </Layout>
       </LocaleProvider>

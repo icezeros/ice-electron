@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Layout, Menu, Row } from 'antd';
-import { Link } from 'react-router-dom';
+import Link from 'umi/link';
 // import icon from '$public/image/icon.png';
 import './index.css';
 
@@ -37,7 +37,7 @@ class Nav extends Component {
           onClick={this.handleClick}
         >
           <Item key="Home">
-            <Link to="/Home">主页</Link>
+            <Link to="/index">主页</Link>
           </Item>
           <Item key="Window">
             <Link to="/Window">窗口</Link>
