@@ -49,6 +49,7 @@
   "devDependencies": {
     "concurrently": "^4.1.0",
     "cross-env": "^5.2.0",
+    "dva-logger": "^1.0.0",
     "electron": "^5.0.1",
     "electron-builder": "^20.39.0",
     "electron-debug": "^2.2.0",
@@ -62,9 +63,14 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
+    "antd": "^3.19.6",
     "electron-is": "^3.0.0",
     "electron-log": "^3.0.6",
-    "http-proxy": "^1.17.0"
+    "electron-store": "^3.3.0",
+    "getmac": "^1.4.6",
+    "http-proxy": "^1.17.0",
+    "lodash": "^4.17.11",
+    "react": "^16.8.6"
   },
   "electronWebpack": {
     "main": {

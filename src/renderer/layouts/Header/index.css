@@ -1,5 +1,6 @@
 :global .header {
   width: 100%;
+  zindex: 999;
   padding-left: 100px;
   background-color: #f9fafc;
   height: 64px;

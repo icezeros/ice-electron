@@ -21,7 +21,12 @@ body {
 :global .bodyContainer {
   position: absolute;
   left: 160px;
+  zindex: 999;
   right: 0;
   height: 100%;
   background: rgba(255, 255, 255, 0.95);
+}
+
+:global .bodyContainer2 {
+  padding-top: 60px;
 }

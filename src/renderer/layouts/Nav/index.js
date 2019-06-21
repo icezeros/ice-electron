@@ -39,10 +39,10 @@ class Nav extends Component {
           onClick={this.handleClick}
         >
           <Item key="Home">
-            <Link to="/index">主页</Link>
+            <Link to="/">主页</Link>
           </Item>
           <Item key="Window">
-            <Link to="/Window">窗口</Link>
+            <Link to="/window">窗口</Link>
           </Item>
           <Item key="IPC">
             <Link to="/IPC">进程通信</Link>

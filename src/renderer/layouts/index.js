@@ -7,7 +7,16 @@ import Header from './Header';
 import Nav from './Nav';
 // import RouteContent from '$routes';
 import './index.css';
+
+const { Content } = Layout;
+
 // var { ipcRenderer } = require('electron');
+// let ipcRenderer;
+// let electron;
+// if (window.require) {
+//   electron = window.require('electron');
+//   ipcRenderer = electron.ipcRenderer;
+// }
 
 export default class App extends Component {
   componentDidMount() {
@@ -25,7 +34,7 @@ export default class App extends Component {
           <Nav />
           <Layout className="bodyContainer">
             <Header />
-            {children}
+            <Content className="bodyContainer2">{children}</Content>
           </Layout>
         </Layout>
       </LocaleProvider>
