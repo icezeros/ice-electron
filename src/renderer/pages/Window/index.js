@@ -4,12 +4,13 @@ import { Button, Alert } from 'antd';
 import styles from './index.css';
 
 // const { ipcRenderer } = electron;
-let ipcRenderer;
-let electron;
-if (window.require) {
-  electron = window.require('electron');
-  ipcRenderer = electron.ipcRenderer;
-}
+// let ipcRenderer;
+// let electron;
+// if (window.require) {
+//   electron = window.require('electron');
+//   ipcRenderer = electron.ipcRenderer;
+// }
+const { ipcRenderer } = require('electron');
 
 class Window extends React.Component {
   createWindow = () => {

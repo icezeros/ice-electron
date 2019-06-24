@@ -2,7 +2,8 @@ import React from 'react';
 import { Button, Alert } from 'antd';
 import styles from './index.css';
 // import { ipcRenderer } from 'electron';
-const electron = window.require('electron');
+// const electron = window.require('electron');
+const electron = require('electron');
 const { ipcRenderer } = electron;
 
 class Protect extends React.Component {

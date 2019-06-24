@@ -4,8 +4,8 @@ import styles from './index.css';
 // import { ipcRenderer, remote } from 'electron';
 
 // const { getGlobal } = remote;
-const electron = window.require('electron');
-const { ipcRenderer, remote } = electron;
+// const electron = window.require('electron');
+const { ipcRenderer, remote } = require('electron');
 const { getGlobal } = remote;
 
 class IPC extends React.Component {

@@ -31,14 +31,21 @@ export default function handleWindowMessage() {
   });
 
   ipcMain.on('create-window', (event, data) => {
-    let win = new BrowserWindow({
-      width: 800,
-      height: 600,
+    global.application.windowManager.openWindow('creat-window', {
+      window: {
+        width: 800,
+        height: 600,
+      },
+      url: 'http://www.baidu.com/',
     });
-    win.on('close', () => {
-      win = null;
-    });
-    win.loadURL('http://www.baidu.com/');
+    // let win = new BrowserWindow({
+    //   width: 800,
+    //   height: 600,
+    // });
+    // win.on('close', () => {
+    //   win = null;
+    // });
+    // win.loadURL('http://www.baidu.com/');
   });
 
   ipcMain.on('create-nobar-window', (event, data) => {
@@ -104,8 +111,6 @@ export default function handleWindowMessage() {
   });
 
   let i = 0;
-  console.log('============  =============');
-  console.log(global.application.windowManager.getWindow);
   //   const mainWindow = BrowserWindow.fromId(global.mainId);
   const mainWindow = global.application.windowManager.getWindow('main');
   ipcMain.on('start-msg', (event, data) => {

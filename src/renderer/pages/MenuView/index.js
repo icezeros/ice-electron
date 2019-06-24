@@ -3,8 +3,8 @@ import { Alert } from 'antd';
 // import electron from 'electron';
 import styles from './index.css';
 
-const electron = window.require('electron');
-const { remote } = electron;
+// const electron = window.require('electron');
+const { remote } = require('electron');
 const { Menu, globalShortcut, dialog } = remote;
 const menus = [
   {

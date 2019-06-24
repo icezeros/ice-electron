@@ -4,7 +4,8 @@ import { Button, Alert } from 'antd';
 import os from 'os';
 import styles from './index.css';
 
-const electron = window.require('electron');
+// const electron = window.require('electron');
+const electron = require('electron');
 
 const { shell } = electron;
 

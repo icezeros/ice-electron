@@ -1,12 +1,11 @@
-let ipcRenderer;
-let electron;
-if (window.require) {
-  electron = window.require('electron');
-  ipcRenderer = electron.ipcRenderer;
-}
-// const { ipcRenderer } = require('electron');
-console.log('============ ipcRenderer =============');
-console.log(window.require);
+// let ipcRenderer;
+// let electron;
+// if (window.require) {
+//   electron = window.require('electron');
+//   ipcRenderer = electron.ipcRenderer;
+// }
+const { ipcRenderer } = require('electron');
+
 export const dva = {
   config: {
     onError(e) {

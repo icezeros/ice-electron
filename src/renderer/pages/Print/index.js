@@ -6,8 +6,11 @@ import os from 'os';
 import path from 'path';
 import styles from './index.css';
 
-const fs = window.require('fs');
-const electron = window.require('electron');
+// const fs = window.require('fs');
+// const electron = window.require('electron');
+
+const fs = require('fs');
+const electron = require('electron');
 
 const { remote } = electron;
 const { getGlobal, BrowserWindow, shell } = remote;

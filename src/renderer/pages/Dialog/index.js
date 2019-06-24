@@ -2,12 +2,13 @@ import React from 'react';
 import { Button, Alert } from 'antd';
 import styles from './index.css';
 
-let remote;
-let electron;
-if (window.require) {
-  electron = window.require('electron');
-  remote = electron.remote;
-}
+// let remote;
+// let electron;
+// if (window.require) {
+//   electron = window.require('electron');
+//   remote = electron.remote;
+// }
+const { remote } = require('electron');
 
 class Dialog extends React.Component {
   constructor(props) {

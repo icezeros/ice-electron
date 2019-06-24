@@ -1,6 +1,7 @@
 import { app } from 'electron';
 import is from 'electron-is';
 
+import logger from './logger';
 import Application from './Application';
 import handleQuit from './event/quit';
 import handleMessage from './event';
