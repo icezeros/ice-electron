@@ -10,6 +10,58 @@
 
 - 支持整个应用的热重载
 
+## 项目目录
+
+```
+.
+├── build
+│   └── ...                         // webpack 配置文件
+├── dist
+│   └── ...                         // 打包文件夹
+├── src                             // 源代码文件
+│   ├── main                        // 主进程代码
+│   │   ├── Application.js          // application 类
+│   │   ├── config
+│   │   │   └── ...                 // 配置文件
+│   │   ├── event
+│   │   │   └── ...                 // IPC通信 监听事件
+│   │   ├── index.js                // 入口文件
+│   │   ├── logger
+│   │   │   └── index.js            // 日志封装
+│   │   ├── pages
+│   │   │   ├── window.html         // 子窗口 html 模板文件
+│   │   │   └── ...
+│   │   ├── system
+│   │   │   ├── crash.js
+│   │   │   ├── tray.js
+│   │   │   └── ...                 // 系统模块
+│   │   ├── utils
+│   │   │   ├── deviceid.js
+│   │   │   ├── download.js
+│   │   │   ├── path.js
+│   │   │   └── ...                 // 工具类
+│   │   └── window
+│   │       └── index.js            // 渲染窗口封装
+│   └── renderer                    // 渲染进程代码
+│       ├── app.js
+│       ├── assets                  // 静态文件
+│       │   └── yay.jpg
+│       ├── config                  // 配置
+│       │   ├── config.js
+│       │   └── ...
+│       ├── global.js
+│       ├── layouts                 // layout 模板
+│       │   ├── index.css
+│       │   ├── index.js
+│       │   └── ...
+│       ├── models
+│       │   ├── global.js
+│       │   └── ...
+│       └── pages
+│           └── ...
+└── package.json
+```
+
 ## 安装
 
 然后通过 yarn 下载依赖
