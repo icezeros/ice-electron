@@ -1,4 +1,4 @@
-# umi-electron-javecript
+# ice-electron
 
 ### 一个基于 umijs + electron + javecript 的模板
 
